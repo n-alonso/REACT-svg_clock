@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Digital from './clock/Digital';
-import Analog from './clock/Analog';
+import { Digital, Analog } from './clock';
 
 function App() {
-  const [time, setTime] = useState<Date>(new Date());
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const interval = setInterval(() => {

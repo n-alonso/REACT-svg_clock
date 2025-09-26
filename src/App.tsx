@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { Digital, Analog } from './clock';
 
-function App() {
+export function App() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {

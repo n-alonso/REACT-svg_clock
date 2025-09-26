@@ -32,10 +32,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Test
+        run: |
+          npm run test
+
       - name: Build
         run: |
           npm run build
-          zip -r ./release-asset.zip ./dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
